@@ -6,6 +6,16 @@
   - no margins and little or no padding
 */
 
+section {
+	font-size: 1em;
+	background: #888;
+	margin: 1em 1% 1em 1%;
+}
+
+section:hover {
+	background: #666;
+}
+
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
@@ -17,6 +27,14 @@
     - decrease width of sections
     - add `display: inline-block;` so that sections will float next to each other
   */
+  body {
+	  background: orange;
+  }
+  
+  section {
+	  width: 44%;
+	  display: inline-block;
+  }
 }
 /* END FIRST BREAKPOINT */
 
@@ -29,5 +47,14 @@
     - further decrease size of sections
     - increase size of headings and global fonts
   */
+  body {
+	  background: yellow;
+  }
+  
+  section {
+	  max-width: 20%;
+  }
+  
+  
 }
 /* END SECOND BREAKPOINT */
